@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "X Gift Link",
+  "version": "0.3.1",
+  "description": "输入 X 账号，查看 Premium 礼品实时报价，一键生成付款链接。",
+  "minimum_chrome_version": "120",
+  "permissions": [
+    "storage",
+    "cookies",
+    "scripting",
+    "proxy",
+    "webRequest",
+    "webRequestAuthProvider",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://x.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "X Gift Link",
+    "default_popup": "app.html",
+    "default_icon": {
+      "16": "icons/16.png",
+      "32": "icons/32.png"
+    }
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none';"
+  }
+}

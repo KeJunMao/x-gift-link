@@ -1,0 +1,14 @@
+{
+  "name": "x-gift-link",
+  "version": "0.3.1",
+  "description": "在浏览器中为 X Premium 礼品生成付款链接。",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "check": "node scripts/check.js",
+    "test": "node --test tests/*.test.js",
+    "package": "npm run check && npm test && node scripts/package.js"
+  }
+}

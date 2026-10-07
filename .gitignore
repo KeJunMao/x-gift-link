@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+*.log
+*.zip
+.env
+.env.*
+!.env.example
+.extension-test-profile*/
+*.har
+.DS_Store
+Thumbs.db

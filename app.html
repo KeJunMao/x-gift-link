@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>X Gift Link</title><link rel="icon" href="icons/32.png"><link rel="stylesheet" href="app.css"><script type="module" src="app.js"></script></head>
+<body><main>
+<header><span class="brand">𝕏 Gift Link</span><button id="open-x" class="quiet">X ↗</button></header>
+<div class="network-line"><span><i id="network-dot"></i>X 出口 <strong id="country">读取中</strong></span><div><button id="refresh-network" class="quiet" aria-label="刷新国家">↻</button><button id="proxy-toggle" class="quiet" aria-expanded="false" aria-controls="proxy-panel">代理</button></div></div>
+<form id="proxy-panel" hidden>
+ <select id="proxy-mode" aria-label="代理模式"><option value="browser">浏览器</option><option value="custom">自定义</option></select>
+ <div id="proxy-fields" hidden>
+  <div class="proxy-row"><select id="proxy-scheme" aria-label="协议"><option value="http">HTTP</option><option value="https">HTTPS</option><option value="socks5">SOCKS5</option></select><input id="proxy-host" aria-label="地址" placeholder="地址" autocomplete="off"><input id="proxy-port" type="number" min="1" max="65535" aria-label="端口" placeholder="端口"></div>
+  <div id="proxy-auth" class="proxy-row"><input id="proxy-user" aria-label="用户名，可选" placeholder="用户名" autocomplete="off"><input id="proxy-password" type="password" aria-label="密码" placeholder="密码" autocomplete="new-password"></div>
+ </div>
+ <div class="proxy-actions"><span id="proxy-status"></span><div><button type="button" id="proxy-test" class="secondary">测试</button><button type="submit" id="proxy-save" class="secondary">保存</button></div></div>
+ <div id="proxy-test-result" class="probe-result" role="status" aria-live="polite" hidden></div>
+ <div id="proxy-error" class="message" role="alert" hidden></div>
+</form>
+<nav class="steps" aria-label="步骤"><span data-step="1">账号</span><b>›</b><span data-step="2">时长</span><b>›</b><span data-step="3">链接</span></nav>
+<h1 id="title">X 账号</h1>
+<div id="account-summary" class="account-summary" hidden><span id="account-name"></span><button id="change-account" class="quiet">更换</button></div>
+<form id="account-form"><div class="username-field"><span>@</span><input id="username" aria-label="X 用户名" maxlength="16" placeholder="username" autocomplete="off" spellcheck="false" required></div><button id="check-account" class="primary" type="submit">检查 <span>→</span></button></form>
+<section id="duration-section" hidden><div id="reading" class="reading" hidden><span class="loader"></span>读取报价</div><div id="plans" class="plans" role="radiogroup" aria-label="时长"></div><button id="continue" class="primary" disabled>继续 <span>→</span></button><button id="requote" class="quiet below">刷新报价</button></section>
+<section id="confirm-section" hidden><div class="summary"><strong id="confirm-months"></strong><strong id="confirm-price"></strong></div><button id="create-link" class="primary">创建链接 <span>↗</span></button></section>
+<section id="result-section" hidden><div class="summary"><strong id="result-months"></strong><strong id="result-price"></strong></div><input id="checkout-url" aria-label="付款链接" readonly><div class="actions"><button id="copy" class="secondary">复制</button><button id="open-checkout" class="primary">打开 ↗</button></div><button id="start-over" class="quiet below">其他账号</button></section>
+<div id="message" class="message" role="status" aria-live="polite" hidden></div>
+<button id="archive" class="quiet below" hidden>核对后重新生成</button>
+<button id="back" class="quiet back" hidden>← 返回</button>
+</main></body></html>

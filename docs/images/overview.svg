@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
+  <title id="title">X Gift Link — 从账号到付款链接</title>
+  <desc id="desc">三步流程示意：输入收礼人账号，选择礼品时长，生成付款链接。</desc>
+  <rect width="1000" height="300" rx="24" fill="#f4f7ee"/>
+  <g font-family="Segoe UI, Microsoft YaHei, sans-serif">
+    <text x="38" y="47" fill="#657b53" font-size="13" letter-spacing="2">X GIFT LINK</text>
+    <text x="962" y="47" text-anchor="end" fill="#819077" font-size="12">三步流程示意</text>
+    <g fill="#fff" stroke="#dfe6d5">
+      <rect x="38" y="74" width="280" height="184" rx="16"/>
+      <rect x="360" y="74" width="280" height="184" rx="16"/>
+      <rect x="682" y="74" width="280" height="184" rx="16"/>
+    </g>
+    <g font-size="12" fill="#719153">
+      <text x="60" y="107">01 / 账号</text><text x="382" y="107">02 / 时长</text><text x="704" y="107">03 / 链接</text>
+    </g>
+    <g font-size="23" font-weight="600" fill="#24341e">
+      <text x="60" y="148">送给哪个账号？</text><text x="382" y="148">选择一份心意</text><text x="704" y="148">准备好付款链接</text>
+    </g>
+    <rect x="60" y="176" width="236" height="51" rx="9" fill="#f8faf4" stroke="#e1e6d9"/>
+    <text x="77" y="208" font-size="17" fill="#89967d">@ username</text>
+    <rect x="382" y="176" width="236" height="51" rx="9" fill="#f8faf4" stroke="#e1e6d9"/>
+    <text x="399" y="207" font-size="15" fill="#536b43">3 / 6 个月</text><text x="602" y="207" text-anchor="end" font-size="13" fill="#719153">实时报价</text>
+    <rect x="704" y="176" width="236" height="51" rx="9" fill="#d8edaa"/>
+    <text x="723" y="208" font-size="15" fill="#2e4322">复制或打开</text><text x="921" y="208" text-anchor="end" font-size="20" fill="#2e4322">↗</text>
+    <g font-size="24" fill="#a1b38e"><text x="330" y="176">›</text><text x="652" y="176">›</text></g>
+  </g>
+</svg>
